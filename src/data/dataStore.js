@@ -6,23 +6,24 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
-  defaultListDescription: '<p>I can do all the things!!!</p>',
+  defaultListDescription: '<p>Happy chappy me</p>',
   defaultColumnIcon: 'list-alt',
 };
 
 export const pageContents = {
   title: 'My first React app',
-  subtitle: 'A simple to-do app, with lists, columns and cards',
+  subtitle: 'A simple app, with lists, columns and cards',
 };
 
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  title: 'Things to dream of',
+  description: 'Never ending list of amazing things',
+  image: './src/images/hero_1.jpg',
+  altImage: 'starring sky',
   columns: [
     {
       key: 0,
-      title: 'Books',
+      title: 'For myself',
       icon: 'book',
       cards: [
         {
@@ -37,7 +38,7 @@ export const listData = {
     },
     {
       key: 1,
-      title: 'Movies',
+      title: 'For you',
       icon: 'film',
       cards: [
         {
@@ -52,7 +53,7 @@ export const listData = {
     },
     {
       key: 2,
-      title: 'Games',
+      title: 'For us',
       icon: 'gamepad',
       cards: [
         {
