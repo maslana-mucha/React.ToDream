@@ -1,10 +1,22 @@
 import React from 'react';
 import styles from './Hero.scss';
+import PropTypes from 'prop-types';
 
-const Hero = () => (
+const Hero = props => (
   <header className={styles.component}>
-    <img className={styles.image} src="/images/hero_1.jpg" alt="things to do" />
+    <h2 className={styles.title}>{props.titleText}</h2>
+    <img
+      className={styles.image}
+      src={props.image}
+      alt={props.altImage}
+    />
   </header>
 );
+
+Hero.propTypes = {
+  titleText: PropTypes.node.isRequired,
+  image: PropTypes.string,
+  altImage: PropTypes.string,
+};
 
 export default Hero;
