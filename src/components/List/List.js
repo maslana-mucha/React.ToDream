@@ -7,10 +7,6 @@ import Creator from '../Creator/Creator.js';
 import { settings } from '../../data/dataStore';
 
 class List extends React.Component {
-  state = {
-    columns: this.props.columns || [],
-  };
-
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
@@ -23,8 +19,12 @@ class List extends React.Component {
     description: settings.defaultListDescription,
   };
 
+  state = {
+    columns: this.props.columns || [],
+  };
+
   addColumn(title) {
-    console.log(this);
+    //console.log(this);
     this.setState((state) => ({
       columns: [
         ...state.columns,

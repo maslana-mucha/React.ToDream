@@ -24,7 +24,7 @@ export const listData = {
     {
       key: 0,
       title: 'For myself',
-      icon: 'book',
+      icon: 'smile-beam',
       cards: [
         {
           key: 0,
@@ -39,7 +39,7 @@ export const listData = {
     {
       key: 1,
       title: 'For you',
-      icon: 'film',
+      icon: 'smile-wink',
       cards: [
         {
           key: 0,
@@ -54,7 +54,7 @@ export const listData = {
     {
       key: 2,
       title: 'For us',
-      icon: 'gamepad',
+      icon: 'laugh-wink',
       cards: [
         {
           key: 0,
