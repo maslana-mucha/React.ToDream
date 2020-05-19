@@ -5,10 +5,11 @@ import { pageContents, listData } from '../../data/dataStore';
 
 class App extends React.Component {
   render() {
+  //console.log(this);
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>My first React app</h1>
-        <h2 className={styles.subtitle}>Hello world!</h2>
+        <h1 className={styles.title}>{pageContents.title}</h1>
+        <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <List {...listData}>
           <p>Never ending list of amazing things</p>
         </List>
