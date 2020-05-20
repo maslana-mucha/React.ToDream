@@ -8,6 +8,10 @@ export const settings = {
   },
   defaultListDescription: '<p>Happy chappy me</p>',
   defaultColumnIcon: 'list-alt',
+  search: {
+    defaultText: 'Search...',
+  },
+  headerIcon: 'rainbow',
 };
 
 export const pageContents = {
