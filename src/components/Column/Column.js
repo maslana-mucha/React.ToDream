@@ -1,18 +1,23 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-import Card from '../Card/Card.js';
-import Creator from '../Creator/Creator.js';
+import Card from '../Card/Card';
+//import Creator from '../Creator/Creator.js';
+import Icon from '../Icon/Icon';
 import { settings } from '../../data/dataStore';
-import Icon from '../Icon/Icon.js';
 
 class Column extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
-    cards: PropTypes.array,
     icon: PropTypes.node,
+    cards: PropTypes.array,
   };
 
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  };
+
+  /* --> deleting due to redux implementation
   state = {
     cards: this.props.cards || [],
   };
@@ -31,28 +36,32 @@ class Column extends React.Component {
       ],
     }));
   }
+  */
 
   render() {
     //console.log(this);
+    const { title, icon, cards } = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
           <span className={styles.icon}>
-            <Icon name={this.props.icon} />
+            <Icon name={icon} />
           </span>
-          {this.props.title}
+          {title}
         </h3>
         <div>
-          {this.state.cards.map(({ key, ...cardProps }) => (
-            <Card key={key} {...cardProps} />
+          {cards.map((cardsData) => (
+            <Card key={cardsData.id} {...cardsData} />
           ))}
         </div>
+        {/*
         <div>
           <Creator
             text={settings.cardCreatorText}
             action={(title) => this.addCard(title)}
           />
         </div>
+        */}
       </section>
     );
   }

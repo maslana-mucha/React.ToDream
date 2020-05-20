@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './List.scss';
-import Hero from '../Hero/Hero.js';
+import Hero from '../Hero/Hero';
 import PropTypes from 'prop-types';
-import Column from '../Column/Column.js';
-import Creator from '../Creator/Creator.js';
+import Column from '../Column/ColumnContainer';
+import Creator from '../Creator/Creator';
 import { settings } from '../../data/dataStore';
 
 class List extends React.Component {
@@ -13,12 +13,14 @@ class List extends React.Component {
     image: PropTypes.string,
     altImage: PropTypes.string,
     columns: PropTypes.array,
+    addColumn: PropTypes.func,
   };
 
   static defaultProps = {
     description: settings.defaultListDescription,
   };
 
+  /* -- > deleting due to redux implementation
   state = {
     columns: this.props.columns || [],
   };
@@ -39,26 +41,24 @@ class List extends React.Component {
       ],
     }));
   }
+  */
 
   render() {
     //console.log(this);
+    const { title, image, altImage, description, columns, addColumn } = this.props;
     return (
       <section className={styles.component}>
-        <Hero
-          title={this.props.title}
-          image={this.props.image}
-          altImage={this.props.altImage}
-        />
-        <div className={styles.description}>{this.props.description}</div>
+        <Hero title={title} image={image} altImage={altImage} />
+        <div className={styles.description}>{description}</div>
         <div className={styles.columns}>
-          {this.state.columns.map(({ key, ...columnProps }) => (
-            <Column key={key} {...columnProps} />
+          {columns.map((columnData) => (
+            <Column key={columnData.id} {...columnData} />
           ))}
         </div>
         <div className={styles.creator}>
           <Creator
             text={settings.columnCreatorText}
-            action={(title) => this.addColumn(title)}
+            action={addColumn}
           />
         </div>
       </section>

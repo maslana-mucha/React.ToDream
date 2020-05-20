@@ -6,28 +6,25 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
-  search: {
-    defaultText: 'Search...',
-    icon: 'search',
-  },
-  defaultListDescription: '<p>I can do all the things!!!</p>',
+  defaultListDescription: '<p>Happy chappy me</p>',
   defaultColumnIcon: 'list-alt',
 };
 
 export const pageContents = {
   title: 'My first React app',
-  subtitle: 'A simple to-do app, with lists, columns and cards',
+  subtitle: 'A simple app, with lists, columns and cards',
 };
 
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  title: 'Things to dream of',
+  description: 'Never ending list of amazing things',
+  image: './src/images/hero_1.jpg',
+  altImage: 'starring sky',
   columns: [
     {
       key: 0,
-      title: 'Books',
-      icon: 'book',
+      title: 'For myself',
+      icon: 'smile-beam',
       cards: [
         {
           key: 0,
@@ -41,8 +38,8 @@ export const listData = {
     },
     {
       key: 1,
-      title: 'Movies',
-      icon: 'film',
+      title: 'For you',
+      icon: 'smile-wink',
       cards: [
         {
           key: 0,
@@ -56,8 +53,8 @@ export const listData = {
     },
     {
       key: 2,
-      title: 'Games',
-      icon: 'gamepad',
+      title: 'For us',
+      icon: 'laugh-wink',
       cards: [
         {
           key: 0,
@@ -75,9 +72,10 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    title: 'Things to dream of',
+    description: 'Never ending list of amazing things',
+    image: './src/images/hero_1.jpg',
+    altImage: 'starring sky',
   },
 ];
 
@@ -85,20 +83,20 @@ const columns = [
   {
     id: 'column-1',
     listId: 'list-1',
-    title: 'Books',
-    icon: 'book',
+    title: 'For myself',
+    icon: 'smile-beam',
   },
   {
     id: 'column-2',
     listId: 'list-1',
-    title: 'Movies',
-    icon: 'film',
+    title: 'For you',
+    icon: 'smile-wink',
   },
   {
     id: 'column-3',
     listId: 'list-1',
-    title: 'Games',
-    icon: 'gamepad',
+    title: 'For us',
+    icon: 'laugh-wink',
   },
   {
     id: 'column-4',
