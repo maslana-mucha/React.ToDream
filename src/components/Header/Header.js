@@ -12,7 +12,7 @@ class Header extends React.Component {
       <header className={styles.component}>
         <Container>
           <div className={styles.wrapper}>
-            <Link className={styles.logo}>
+            <Link to="/" className={styles.logo}>
               <Icon name={settings.headerIcon} />
             </Link>
             <Search />

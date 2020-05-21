@@ -1,7 +1,9 @@
+import React from 'react';
 import styles from './FAQ.scss';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
 import { faqData } from '../../data/dataStore';
+import ReactHtmlParser from 'react-html-parser';
 
 const FAQ = () => (
   <Container>
@@ -11,7 +13,7 @@ const FAQ = () => (
         image={faqData.image}
         altImage={faqData.altImage}
       />
-      <div className={styles.description}>{faqData.description}</div>
+      <div className={styles.description}>{ReactHtmlParser(faqData.description)}</div>
       <div>
         <p>{faqData.context}</p>
       </div>
