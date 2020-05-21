@@ -19,6 +19,22 @@ export const pageContents = {
   subtitle: 'A simple app, with lists, columns and cards',
 };
 
+export const info = {
+  title: 'What no one really know',
+  image: './src/images/hero_2.jpg',
+  altImage: 'secret',
+  description: 'Are you ready?',
+  context: '...',
+};
+
+export const faqData = {
+  title: 'If there is something you consider',
+  image: './src/images/hero_3.jpg',
+  altImage: 'illumination',
+  description: 'But don&prime;t know how to ask',
+  context: '...',
+};
+
 export const listData = {
   title: 'Things to dream of',
   description: 'Never ending list of amazing things',

@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
+    "prebuild": "rm -rf dist",
     "build": "webpack --mode production",
-    "lint": "eslint src/",
+    "postbuild": "cp -r ./src/images ./dist",
+    "lint": "eslint",
     "server": "http-server dist"
   },
   "keywords": [],
@@ -19,6 +21,7 @@
     "react-dom": "^16.7.0",
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.0.1",
+    "react-router-dom": "^5.2.0",
     "redux": "^4.0.1",
     "shortid": "^2.2.15"
   },
