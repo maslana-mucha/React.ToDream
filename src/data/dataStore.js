@@ -21,7 +21,7 @@ export const pageContents = {
 
 export const info = {
   title: 'What no one really know',
-  image: './images/hero_2.jpg',
+  image: 'https://i.postimg.cc/zG1745k2/hero-2.jpg',
   altImage: 'secret',
   description: 'Are you ready?',
   context: '...',
@@ -29,7 +29,7 @@ export const info = {
 
 export const faqData = {
   title: 'If there is something you consider',
-  image: './images/hero_3.jpg',
+  image: 'https://i.postimg.cc/3Ry2dbBD/hero-3.jpg',
   altImage: 'illumination',
   description: 'But don&prime;t know how to ask',
   context: '...',
@@ -40,7 +40,7 @@ const lists = [
     id: 'list-1',
     title: 'Things to dream of',
     description: 'Never ending list of amazing things',
-    image: './images/hero_1.jpg',
+    image: 'https://i.postimg.cc/J4XKTtjB/hero-1.jpg',
     altImage: 'starring sky',
   },
 ];

@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "prebuild": "rm -rf dist",
     "build": "webpack --mode production",
-    "postbuild": "cp -r ./src/images ./dist",
     "lint": "eslint",
     "server": "http-server dist"
   },
