@@ -21,7 +21,7 @@ export const pageContents = {
 
 export const info = {
   title: 'What no one really know',
-  image: './src/images/hero_2.jpg',
+  image: '/images/hero_2.jpg',
   altImage: 'secret',
   description: 'Are you ready?',
   context: '...',
@@ -29,64 +29,10 @@ export const info = {
 
 export const faqData = {
   title: 'If there is something you consider',
-  image: './src/images/hero_3.jpg',
+  image: '/images/hero_3.jpg',
   altImage: 'illumination',
   description: 'But don&prime;t know how to ask',
   context: '...',
-};
-
-export const listData = {
-  title: 'Things to dream of',
-  description: 'Never ending list of amazing things',
-  image: './src/images/hero_1.jpg',
-  altImage: 'starring sky',
-  columns: [
-    {
-      key: 0,
-      title: 'For myself',
-      icon: 'smile-beam',
-      cards: [
-        {
-          key: 0,
-          title: 'This Is Going to Hurt',
-        },
-        {
-          key: 1,
-          title: 'Interpreter of Maladies',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'For you',
-      icon: 'smile-wink',
-      cards: [
-        {
-          key: 0,
-          title: 'Harry Potter',
-        },
-        {
-          key: 1,
-          title: 'Star Wars',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'For us',
-      icon: 'laugh-wink',
-      cards: [
-        {
-          key: 0,
-          title: 'The Witcher',
-        },
-        {
-          key: 1,
-          title: 'Skyrim',
-        },
-      ],
-    },
-  ],
 };
 
 const lists = [
@@ -94,7 +40,7 @@ const lists = [
     id: 'list-1',
     title: 'Things to dream of',
     description: 'Never ending list of amazing things',
-    image: './src/images/hero_1.jpg',
+    image: '/images/hero_1.jpg',
     altImage: 'starring sky',
   },
 ];
