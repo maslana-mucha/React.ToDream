@@ -10,13 +10,10 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-  addCard: (title) =>
-    dispatch(
-      createActionAddCard({
-        columnId: props.id,
-        title,
-      })
-    ),
+  addCard: (title) => dispatch(createActionAddCard({
+    columnId: props.id,
+    title,
+  })),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Column);

@@ -10,6 +10,7 @@ export const settings = {
   defaultColumnIcon: 'list-alt',
   search: {
     defaultText: 'Search...',
+    icon: 'search',
   },
   headerIcon: 'rainbow',
 };
@@ -38,6 +39,20 @@ export const faqData = {
 const lists = [
   {
     id: 'list-1',
+    title: 'Things to dream of',
+    description: 'Never ending list of amazing things',
+    image: 'https://i.postimg.cc/J4XKTtjB/hero-1.jpg',
+    altImage: 'starring sky',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to dream of',
+    description: 'Never ending list of amazing things',
+    image: 'https://i.postimg.cc/J4XKTtjB/hero-1.jpg',
+    altImage: 'starring sky',
+  },
+  {
+    id: 'list-3',
     title: 'Things to dream of',
     description: 'Never ending list of amazing things',
     image: 'https://i.postimg.cc/J4XKTtjB/hero-1.jpg',
